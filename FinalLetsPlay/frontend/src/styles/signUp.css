@@ -1,0 +1,143 @@
+
+.SigningMain {
+    display: flex;
+    justify-content: center;
+}
+
+.Signing {
+    margin: 50px 0px;
+}
+
+.Signing > span {
+    position: relative;
+    float: right;
+}
+
+.Signing > div > h1 {
+    transform: translate(35%);
+    margin-bottom: 20px;
+}
+
+hr {
+    clear: both;
+    height: 4px;
+    background: black;
+}
+
+.inputForm {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 25px;
+    transform: translate(5%);
+}
+
+.formBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputForm span {
+    position: absolute;
+    left: 0;
+    line-height: 39px;
+}
+
+.inputForm input {
+    width: 270px;
+    position: relative;
+    padding-left: 10px;
+    margin-left: 130px;
+    height: 40px;
+}
+
+.formBoxTop button {
+    width: 120px;
+}
+
+.formBtn {
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+    transform: translate(55%);
+    margin-bottom: 25px;
+}
+
+.formBtn button {
+    border-style: none;
+    border-radius: 5px;
+    height: 35px;
+    background-color: rgb(219, 219, 219);
+}
+
+.formDate {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    transform: translate(5%);
+}
+
+.formDate > input {
+    width: 270px;
+    height: 40px;
+    margin-left: 60px;
+    border-style: none;
+    border: 0.5px solid darkgray;
+}
+
+.css-1lwbda4-MuiStack-root {
+    margin-left: 63px;
+    width: 270px;
+}
+
+.agreementAsk {
+    margin-left: 20px;
+}
+
+.agreementTitle {
+    margin-bottom: 5px;
+}
+
+.agreementTitle input {
+    margin-left: 13px;
+    margin-right: 20px;
+}
+
+.agreement span:nth-child(3){
+    font-size: larger;
+    font-weight: bold;
+}
+
+.agreement > div {
+    margin-left: 135px;
+    margin-bottom: 5px;
+}
+
+.agreement > div > span:nth-child(1) {
+    margin-right: 20px;
+}
+
+.agreement > span {
+    margin-left: 100px;
+}
+
+.signUpBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-15%);
+}
+
+.signUpBtn button {
+    height: 50px;
+    border-style: none;
+    margin: 50px auto 20px auto;
+    border-radius: 20px;
+    background-color: aquamarine;
+    color: white;
+}
+
+.signUpLink a {
+    color: rgba(0, 0, 255, 0.24);
+}
