@@ -21,6 +21,7 @@ function App () {
             <p className="App-intro">
                 To get started, edit <code>src/App.js</code> and save to reload.
             </p>
+            <p>강현 커밋</p>
         </div>
     )
 }
