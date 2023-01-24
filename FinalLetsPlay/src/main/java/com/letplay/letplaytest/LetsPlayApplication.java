@@ -13,9 +13,9 @@ public class LetsPlayApplication {
 		SpringApplication.run(LetsPlayApplication.class, args);
 	}
 	
-	@GetMapping("/")
+	@GetMapping("/home")
 	public String root() {
-		return "index";
+		return "App.js";
 		//return "main";	//메인으로 이동 (추후 사용)
 	}
 }
