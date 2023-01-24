@@ -72,6 +72,11 @@ public class FacImpl implements FacBiz{
 		return facMapper.insertRes(dto);
 	}
 
+	@Override
+	public List<FacDto> selectRateavg() {
+		return facMapper.selectRateavg();
+	}
+
 //	@Override
 //	public FacResDto selectRes(int facSeq, String id, Date resDate, String resStarttime) {
 //		return facMapper.selectRes(facSeq, id, resDate, resStarttime);
