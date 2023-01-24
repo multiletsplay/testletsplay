@@ -1,12 +1,13 @@
 import React, {useState, useEffect} from 'react';
-import logo from './logo.svg';
-import './App.css';
- 
-function App () {
+import "./App.css";
+
+import Layout from "./components/Layout/Layout";
+
+function App() {
     const [message, setMessage] = useState("");
  
     useEffect(() => {
-        fetch('/api/hello')
+        fetch('/home')
             .then(response => response.text())
             .then(message => {
                 setMessage(message);
@@ -21,9 +22,12 @@ function App () {
             <p className="App-intro">
                 To get started, edit <code>src/App.js</code> and save to reload.
             </p>
-            <p>강현 커밋</p>
         </div>
     )
+  return (
+    <Layout message={message}/>
+  );
+>>>>>>> branch 'main' of https://github.com/multiletsplay/testletsplay.git
 }
- 
+
 export default App;
