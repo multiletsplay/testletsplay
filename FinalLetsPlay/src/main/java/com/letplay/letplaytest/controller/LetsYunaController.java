@@ -54,22 +54,18 @@ public class LetsYunaController {
 	@Autowired
 	private LikesBiz likesBiz;
 	
-	@GetMapping("/api/hello")
-    public String hello(){
-        return "안녕하세요. 현재 서버시간은 "+new Date() +"입니다. \n";
-    }
-	
 	// 시설
 	@GetMapping("/facility/list")
-	public Map<String, Object> selectFacList(HttpServletRequest request) {
-		HttpSession session = request.getSession();
-		MemberDto member = (MemberDto) session.getAttribute("login");
+	public List<FacDto> selectFacList() {
+//		HttpSession session = request.getSession();
+//		MemberDto member = (MemberDto) session.getAttribute("login");
 //		model.addAttribute("member", memBiz.selectmember(member.getId()));
 //		model.addAttribute("faclist", facBiz.selectFacList(member.getId()));
-		Map<String, Object> resultMap = new HashMap<String, Object>();
-		resultMap.put("member", memBiz.selectmember(member.getId()));
-		resultMap.put("faclist", facBiz.selectFacList(member.getId()));
-		return resultMap;
+//		Map<String, Object> resultMap = new HashMap<String, Object>();
+//		resultMap.put("member", memBiz.selectmember(member.getId()));
+//		resultMap.put("faclist", facBiz.selectFacList(member.getId()));
+//		return resultMap;
+		return facBiz.selectFacList();
 	}
 	
 	@GetMapping("/facility/select")

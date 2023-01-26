@@ -15,14 +15,14 @@ import com.letplay.letplaytest.dto.SearchDto;
 @Mapper
 public interface FacMapper {
 	
-	@Select(" SELECT f.*, s.SPO_NAME, ANY_VALUE(l.LIKES_STATUS) LIKES_STATUS, COUNT(REV_ID) CNT_REVIEW "
+	@Select(" SELECT f.*, s.SPO_NAME, COUNT(REV_ID) CNT_REVIEW "
 			+ " FROM FACILITY f "
 			+ "		LEFT OUTER JOIN SPORTS s ON f.SPO_ID=s.SPO_ID "
-			+ " 	LEFT OUTER JOIN LIKES l ON f.FAC_SEQ=l.FAC_SEQ AND l.ID=#{id} "
+//			+ " 	LEFT OUTER JOIN LIKES l ON f.FAC_SEQ=l.FAC_SEQ AND l.ID=#{id} "
 			+ "		LEFT OUTER JOIN REVIEW r ON f.FAC_SEQ=r.FAC_SEQ "
 			+ " GROUP BY f.FAC_SEQ "
 			+ " ORDER BY f.FAC_DATE DESC ")
-	List<FacDto> selectFacList(String id);
+	List<FacDto> selectFacList();
 	
 	@Select(" SELECT f.*, s.SPO_NAME, ANY_VALUE(l.LIKES_STATUS) LIKES_STATUS, COUNT(REV_ID) CNT_REVIEW "
 			+ " FROM FACILITY f "
