@@ -17,8 +17,6 @@ public interface FacBiz {
 	public int insertFac(FacDto dto, MultipartFile file) throws Exception ;		//시설 등록
 	public int updateFac(FacDto dto);					//시설 수정
 	
-	public List<FacDto> selectRateavg();
-	
 	public int insertRes(FacResDto dto);				//예약 등록
 	//public FacResDto selectRes(int facSeq, String id, Date resDate, String resStarttime);	//예약 상세확인
 }

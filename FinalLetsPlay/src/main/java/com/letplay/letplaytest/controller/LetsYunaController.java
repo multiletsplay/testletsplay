@@ -54,7 +54,6 @@ public class LetsYunaController {
 	@Autowired
 	private LikesBiz likesBiz;
 	
-	
 	// 시설
 	@GetMapping("/facility/list")
 	public List<FacDto> selectFacList() {
