@@ -4,6 +4,8 @@ import FAQ from '../components/UI/FAQ';
 import HelpNav from '../components/UI/HelpNav';
 
 function Help() {
+
+  
     
   return (
     <div className='Main'>
@@ -19,13 +21,6 @@ function Help() {
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat.' />
           <FAQ sort='계정' title='제목 내용' content='어쩌구 저쩌구' />
-          <FAQ sort='매칭' title='제목 내용' content='어쩌구 저쩌구' />
-          <FAQ sort='시설 예약' title='제목 내용' content='어쩌구 저쩌구' />
-          <FAQ sort='레슨 예약' title='제목 내용' content='어쩌구 저쩌구' />
-          <FAQ sort='레슨 예약' title='제목 내용' content='어쩌구 저쩌구' />
-          <FAQ sort='레슨 예약' title='제목 내용' content='어쩌구 저쩌구' />
-          <FAQ sort='레슨 예약' title='제목 내용' content='어쩌구 저쩌구' />
-          <FAQ sort='레슨 예약' title='제목 내용' content='어쩌구 저쩌구' />
         </div>
       </div>
     </div>

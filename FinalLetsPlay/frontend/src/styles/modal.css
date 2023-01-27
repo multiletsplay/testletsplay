@@ -23,20 +23,29 @@
   overflow: auto;
 }
  
-#modalCloseBtn {
-  position: absolute;
-  bottom: 15px;
-  right: 50%;
-  transform: translateX(-50%);
+.modal_btn_wrap {
   border: none;
   color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
   font-size: 20px;
+  text-align: center;
 }
- 
-#modalCloseBtn:hover {
+
+.modal_btn_wrap button#modalCloseBtn {
+  margin-right: 10px;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: .8rem;
   cursor: pointer;
 }
+
+.modal_btn_wrap button#modalCloseBtn:last-child{
+  margin-right: 0;
+  background-color: var(--font-100);
+}
+ 
 
 
 .Modal h3{

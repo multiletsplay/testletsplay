@@ -8,7 +8,6 @@ import Info from './MatchingDetail/info'
 import Cost from './MatchingDetail/cost'
 import Favorite from '../components/UI/favorite'
 
-
 import '../styles/match_detail_lay.css'
 
 
@@ -28,7 +27,7 @@ const MatchingDetails = () => {
 
         <h2>제목이 나오는 영역</h2>
         <h5 style={{marginBottom: '30px'}}>작성자(닉네임)</h5>
-
+        
         <MatchCategory category='참가비'/>
         <MatchCategory category='상세정보'/>
         <MatchCategory category='주의사항'/>

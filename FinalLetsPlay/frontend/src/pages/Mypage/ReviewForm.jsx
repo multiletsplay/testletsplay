@@ -26,10 +26,10 @@ const ReviewForm = (props) => {
               </label>
               <div>
               <textarea
-            ref={textRef}
-            placeholder="게시글 입력하기.."
-            onInput={handleResizeHeight}
-           />
+                ref={textRef}
+                placeholder="후기를 입력해주세요"
+                onInput={handleResizeHeight}
+              />
               </div>
             </span>
         </div>

@@ -11,6 +11,7 @@ import SportsData from '../assets/data/SportsData'
 import Services from "../services/Services";
 import MatchingData from "../assets/data/MatchingData";
 import lessonData from "../assets/data/lessonData";
+import Mainimg from "../assets/images/01.png"
 
 import MatchingList from "../components/UI/MatchingList";
 import LessonList from "../components/UI/LessonList";
@@ -20,16 +21,26 @@ import ListMatchList from "../components/UI/ListMatchList";
 import sportsButtons from "../assets/data/datacategory";
 import { getMatchingData, filterMatchingData, getLessonData, filterLessonData, getSportsData,filterSportsData } from "./Filter/filtertfun";
 import FilterHome from "./Filter/filter_home";
+import axios from 'axios';
 
 const Home = () => {
+  
 
   const [ matching, setMatching] = useState([]);
   const [ lesson, setLesson] = useState([]);
   const [ facilty, setFacilty] = useState([]);
-  
+  const [ backUrl, setBackUrl ] = useState();
+
+
 
 
   useEffect(()=>{
+    axios.get('/api/hello')
+    .then(response => setBackUrl(response.data))
+    .catch(error => console.log(error))
+   
+  
+
     const filteredMatching = MatchingData.filter(
       (item) => item.category
     );    
@@ -90,7 +101,9 @@ const Home = () => {
                           <p>
                           렛플레이는 위치기반·실시간 운동매칭 서비스로 <br />
                           사용자들끼리 매칭을 통해 
-                          운동 메이트와 함께 운동을 할 수 있습니다
+                          운동 메이트와 함께 운동을 할 수 있습니다<br />
+                          <br />
+                          {backUrl}
                           </p>
 
                           <motion.button whileTap={{scale:1.2}}className="buy__btn"><Link to='/matching'>MATCHING NOW</Link></motion.button>
@@ -99,6 +112,7 @@ const Home = () => {
 
                   <Col lg='6' md='6'>
                         <div className="hero__img">
+                          <img src={Mainimg} alt="" />
                         </div>
                   </Col>
               </Row>

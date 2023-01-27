@@ -99,3 +99,10 @@
 .pageSingle {
     margin: 0 7px;
 }
+
+.PersonalResult {
+    background-color: rgb(235, 235, 235);
+    height: auto;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
