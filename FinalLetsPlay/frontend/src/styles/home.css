@@ -3,7 +3,12 @@
 .hero__section{
   background: var(--hero-bg);
   margin-bottom:40px;
-  padding: 80px 0 !important;
+  padding: 50px 0 !important;
+}
+
+
+.hero__content{
+  margin-top:60px;
 }
 
 
@@ -22,6 +27,11 @@
 
 .hero__section p:nth-child(1){
   font-weight: 500;
+}
+
+
+.hero__img img{
+  width: 90%;
 }
 
 .buy__btn{
@@ -72,7 +82,7 @@
   border: none;
   outline: none;
   padding: 8px 20px;
-  background: var(--font-100);
+  background: var(--font-50);
   color: var(--font-500);
   cursor: pointer;
   font-size: 1rem;

@@ -22,12 +22,6 @@
   position: relative;
 }
 
-.container h3{
-  font-size: 1.7rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
 .nav__wrapper{
   display: flex;
   align-items: center;

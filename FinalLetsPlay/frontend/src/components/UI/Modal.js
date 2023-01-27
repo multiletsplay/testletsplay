@@ -1,5 +1,7 @@
 import React,{useEffect} from "react";
- 
+import { motion } from "framer-motion";
+
+
 function Modal(props) {
 
 
@@ -24,10 +26,16 @@ function Modal(props) {
     <div className="Modal" onClick={closeModal}>
       <div className="modalBody" onClick={(e) => e.stopPropagation()}>
         {props.children}
-        <button id="modalCloseBtn" onClick={closeModal}>취소</button>
+        <div class="modal_btn_wrap">
+          <motion.button whileTap={{scale:1.1}} id="modalCloseBtn" onClick={closeModal}>등록</motion.button>
+          <motion.button whileTap={{scale:1.1}} id="modalCloseBtn" onClick={closeModal}>취소</motion.button>
+        </div>
       </div>
     </div>
   );
 }
  
 export default Modal;
+
+
+

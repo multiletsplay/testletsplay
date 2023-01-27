@@ -1,29 +1,23 @@
-
 .SigningMain {
     display: flex;
     justify-content: center;
 }
-
 .Signing {
     margin: 50px 0px;
 }
-
 .Signing > span {
     position: relative;
     float: right;
 }
-
 .Signing > div > h1 {
     transform: translate(35%);
     margin-bottom: 20px;
 }
-
 hr {
     clear: both;
     height: 4px;
     background: black;
 }
-
 .inputForm {
     width: 400px;
     display: flex;
@@ -32,103 +26,133 @@ hr {
     margin-bottom: 25px;
     transform: translate(5%);
 }
-
-.formBox {
+.formBoxTop {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
-
-.inputForm span {
-    position: absolute;
-    left: 0;
-    line-height: 39px;
-}
-
-.inputForm input {
-    width: 270px;
+.formBox {
     position: relative;
-    padding-left: 10px;
-    margin-left: 130px;
-    height: 40px;
+    margin-top: 30px;
+    width: 90%;
 }
-
-.formBoxTop button {
-    width: 120px;
+.redColour {
+    color: red;
 }
-
-.formBtn {
-    width: 270px;
+.ValTarget {
+    display: flex;
+    margin-bottom: 26px;
+    align-items: center;
+}
+.ValTarget > button {
+    background-color: grey;
+    width: 60px;
+    height: 30px;
+    font-size: smaller;
+    color: white;
+    border-radius: 8px;
+}
+.ValTarget > input {
+    border: 0.5px solid darkgray;
+    width: 250px;
+    height: 43px;
+    border-radius: 4px;
+    font-size: small;
+}
+.idCheck {
     display: flex;
     justify-content: space-between;
-    transform: translate(55%);
-    margin-bottom: 25px;
 }
-
+.idCheck > input {
+    margin-left: 38px;
+}
+.pwCheck > input {
+    margin-left: 39px;
+}
+.pwDCheck > input {
+    margin-left: 6.5px;
+}
+.nameCheck > input {
+    margin-left: 72px;
+}
+.nicCheck > input {
+    margin-left: 56px;
+}
+.emailCheck > input {
+    margin-left: 56px;
+}
+.numCheck {
+    display: flex;
+    justify-content: space-between;
+}
+.numCheck > input {
+    margin-left: 38px;
+}
+.numDCheck > input {
+    margin-left: 110px;
+}
+.numDCheck > button {
+    width: 60px;
+    margin-left: 20px;
+}
+.formBtn {
+    width: 249px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    margin-left: 110px;
+}
 .formBtn button {
+    width: 120px;
     border-style: none;
     border-radius: 5px;
     height: 35px;
     background-color: rgb(219, 219, 219);
 }
-
 .formDate {
     display: flex;
     align-items: center;
-    width: fit-content;
-    transform: translate(5%);
 }
-
 .formDate > input {
-    width: 270px;
+    width: 249px;
     height: 40px;
-    margin-left: 60px;
+    margin-left: 47px;
     border-style: none;
     border: 0.5px solid darkgray;
 }
-
 .css-1lwbda4-MuiStack-root {
     margin-left: 63px;
     width: 270px;
 }
-
 .agreementAsk {
     margin-left: 20px;
 }
-
 .agreementTitle {
     margin-bottom: 5px;
 }
-
 .agreementTitle input {
     margin-left: 13px;
     margin-right: 20px;
 }
-
 .agreement span:nth-child(3){
     font-size: larger;
     font-weight: bold;
 }
-
 .agreement > div {
     margin-left: 135px;
     margin-bottom: 5px;
 }
-
 .agreement > div > span:nth-child(1) {
     margin-right: 20px;
 }
-
 .agreement > span {
     margin-left: 100px;
 }
-
 .signUpBtn {
     display: flex;
     flex-direction: column;
     align-items: center;
     transform: translate(-15%);
 }
-
 .signUpBtn button {
     height: 50px;
     border-style: none;
@@ -137,7 +161,43 @@ hr {
     background-color: aquamarine;
     color: white;
 }
-
+.signUpBtn > button:disabled {
+    background-color: #DADADA;
+    color: white;
+}
 .signUpLink a {
     color: rgba(0, 0, 255, 0.24);
+}
+#chkAll {
+    margin-right: 10px;
+}
+.chk {
+    margin-right: 10px;
+}
+.Validate {
+    position: absolute;
+    margin-left: 110px;
+    font-size: 11px;
+    color: red;
+}
+.VID {
+    top: 44px;
+}
+.VPW {
+    top: 112px;
+}
+.VDPW {
+    top: 180px;
+}
+.VNICK {
+    top: 462px;
+}
+.VNAME {
+    top: 249px;
+}
+.VEMAIL {
+    top: 387px;
+}
+.VNUM {
+    top: 455px;
 }
